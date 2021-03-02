@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Restaurant App</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="jumbotron restaurant-hero">
+      <h1 class="display-4">Hotel Restaurant</h1>
+      <p class="lead">Make a Reservation</p>
+      <hr class="my-4">
+      <p>Please enter your information below to request a reservation.</p>
+      <a class="btn btn-primary btn-lg" href="tables.html" role="button">View Tables</a>
+      <a class="btn btn-secondary btn-lg" href="home.html" role="button">Home</a>
+    </div>
+  
+    <div class="reservations">
+      <form class="reservationForm">
+          <div class="form-row input-element">
+            <div class="form-group col-md-6">
+              <label for="inputName">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+          </div>
+          <div class="form-row input-element">
+            <div class="form-group col-md-6">
+              <label for="inputPhoneNumber">Phone Number</label>
+              <input type="number" class="form-control" id="phoneNumber">
+            </div>
+          </div>
+          <div class="form-row input-element">
+            <div class="form-group col-md-6">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+          </div>
+          <div class="form-row input-element">
+            <div class="form-group col-md-6">
+              <label for="inputID">Unique ID</label>
+              <input type="text" class="form-control" id="reservationID">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+      </form>
+    </div>
+</body>
+
+<script type="text/javascript">
+
+  $("#submitButton").on("click", function() {
+    let customer = {
+      name: $("#name").text(),
+      phoneNumber: $("#phoneNumber").text(),
+      email: $("#email").text(),
+      id: $("reservationID").text()
+    }
+
+    customer.
+
+
+  });
+</script>
+<script src="/Express-HotRestaurant-App/app.js"></script>
+</html>
